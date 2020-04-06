@@ -37,13 +37,7 @@ public class MissileMaker implements Runnable{
             e.printStackTrace();
         }
         while (isRunning) {
-//            int resId = R.drawable.missile;
 
-//            long missileTime = (long) ((delay * 0.5) + (Math.random() * delay));
-//            final Missile missile = new Missile(screenWidth, screenHeight, missileTime, mainActivity);
-//            activeMissiles.add(missile);
-//            SoundPlayer.getInstance().start("launch_missile");
-//            final AnimatorSet as = missile.setData(resId);
 
             mainActivity.runOnUiThread(new Runnable() {
                 @Override
@@ -57,12 +51,7 @@ public class MissileMaker implements Runnable{
                 }
             });
 
-//            mainActivity.runOnUiThread(new Runnable() {
-//                @Override
-//                public void run() {
-//                    as.start();
-//                }
-//            });
+
 
             if( ++count > missilesPerLevel){
                 incrementLevel();
