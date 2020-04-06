@@ -117,33 +117,9 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         }
     }
 
-//    static void doSound(String id){
-//
-////        while (checkNotReady()) {
-////            try {
-////                Thread.sleep(1);
-////            } catch (Exception e){
-////                e.printStackTrace();
-////            }
-////        }
-//
-////        if (checkNotReady())
-////            return;
-//
-//        SoundPlayer.getInstance().start(id);
-//    }
 
-//    private boolean checkNotReady() {
-//        if (SoundPlayer.loadCount != SoundPlayer.doneCount) {
-//            String msg = String.format(Locale.getDefault(),
-//                    "Sound loading not complete (%d of %d),\n" +
-//                            "Please try again in a moment",
-//                    SoundPlayer.doneCount, SoundPlayer.loadCount);
-//            Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
-//            return true;
-//        }
-//        return false;
-//    }
+
+
 
     private void getScreenDimensions() {
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -197,12 +173,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     }
 
     private void launchInterceptor(Base launchBase, float x, float y) {
-//        //extra
-//        Log.d(TAG, "launchInterceptor: "+missileMaker.mSize());
-//        if (missileMaker.mSize() >= 3){
-//            Log.d(TAG, "launchInterceptor: "+missileMaker.mSize());
-//            return;
-//        }
+
 
         if (interceptors.size() >= 3){
             return;
@@ -291,9 +262,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                 endGame();
             }
         }
-//        else {
-//            endGame();
-//        }
+
     }
 
     public void incrementScore() {
@@ -347,7 +316,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         i.putExtra("level", levelValue);
         startActivity(i);
 
-        finish();//////////
+        finish();
     }
 
 
