@@ -31,14 +31,7 @@ public class Base {
         mainActivity.getLayout().addView(imageView);
         imageView.setImageResource(resId);
         imageView.setY(screenHeight - imageView.getDrawable().getIntrinsicHeight());
-//        mainActivity.runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//                mainActivity.getLayout().addView(imageView);
-//                imageView.setImageResource(resId);
-//                imageView.setY(screenHeight - imageView.getDrawable().getIntrinsicHeight());
-//            }
-//        });
+
     }
 
 
